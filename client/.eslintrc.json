@@ -1,0 +1,29 @@
+{
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"jest": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"extends": [
+		"airbnb",
+		"prettier",
+		"prettier/react",
+		"plugin:jest/recommended",
+		"plugin:promise/recommended"
+	],
+	"plugins": ["promise", "jest"],
+	"rules": {},
+	"settings": {
+		// Allows us to lint absolute imports within codebase
+		"import/resolver": {
+			"node": {
+				"moduleDirectory": ["node_modules", "src/"]
+			}
+		}
+	}
+}
