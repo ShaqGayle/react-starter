@@ -64,7 +64,6 @@
 			"eslint --fix",
 			"stylelint --fix",
 			"prettier --write",
-			"git add",
 			"jest --bail --findRelatedTests"
 		]
 	}
