@@ -62,9 +62,14 @@
 	"lint-staged": {
 		"*.{js,jsx}": [
 			"eslint --fix",
-			"stylelint --fix",
-			"prettier --write",
+			"stylelint",
 			"jest --bail --findRelatedTests"
+		],
+		"*.{css,scss}": [
+			"stylelint --fix"
+		],
+		"*.{js,jsx,html,css,scss}": [
+			"prettier --write"
 		]
 	}
 }
