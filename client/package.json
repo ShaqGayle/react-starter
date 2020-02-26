@@ -56,10 +56,14 @@
 	"lint-staged": {
 		"*.{js,jsx}": [
 			"eslint --fix",
-			"stylelint --fix",
-			"prettier --write",
-			"git add",
+			"stylelint",
 			"jest --bail --findRelatedTests"
+		],
+		"*.{css,scss}": [
+			"stylelint --fix"
+		],
+		"*.{js,jsx,html,css,scss}": [
+			"prettier --write"
 		]
 	}
 }
